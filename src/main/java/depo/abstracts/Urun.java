@@ -1,6 +1,6 @@
 package depo.abstracts;
 
-import depo.Raf;
+import depo.business.Raf;
 
 public abstract class Urun
 {

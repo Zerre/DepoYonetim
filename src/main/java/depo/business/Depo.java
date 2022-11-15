@@ -1,4 +1,4 @@
-package depo;
+package depo.business;
 
 import depo.abstracts.Urun;
 
@@ -7,12 +7,7 @@ import java.util.List;
 
 public class Depo
 {
-    static List<Urun> urunler;
-
-    public Depo()
-    {
-        urunler = new LinkedList<>();
-    }
+    static List<Urun> urunler= new LinkedList<>();
 
     public void urunTanimla(Urun urun)
     {
@@ -40,7 +35,7 @@ public class Depo
         {
             if(u.getId().equalsIgnoreCase(id))
             {
-                u.setMiktar(u.getMiktar() - miktar);
+                u.setMiktar(u.getMiktar() + miktar);
                 return true;
             }
         }
